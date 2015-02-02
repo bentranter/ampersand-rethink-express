@@ -39,12 +39,8 @@ exports.add = function (req, res) {
     person.save(function(err, doc) {
         if (err) {
             res.send(err);
-            console.log(err);
-            console.log('Error');
         } else {
             res.json(doc);
-            console.log(doc);
-            console.log('Success');
         }
     });
 };
@@ -84,13 +80,9 @@ exports.update = function (req, res) {
         // Save the person and check for errors kind-of
         person.save(function(err, doc) {
             if (err) {
-                res.send(err);
-                console.log(err);
-                console.log('Error');
+                res.send(err); 
             } else {
-                res.json(doc);
-                console.log(doc);
-                console.log('Success');
+                res.json(doc); 
             }
         });
     });
