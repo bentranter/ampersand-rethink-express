@@ -1,0 +1,28 @@
+{
+  "hash": "b79c72ac3ae64f1425cf6adcf6468a41dd8dae0e",
+  "tree": {
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/builtin/assert.js": "21203b3d3895503468d7a836b75cc26343711ded",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/builtin/events.js": "2842a083c56edcfedb7a2cd25f0f7cd1939ae268",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/builtin/fs.js": "e4ea0366f8ee9551adc23484adb56335eef99780",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/builtin/path.js": "e3d643dff816b6fc4bf50b0c1614aaff55301cd0",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/builtin/stream.js": "56c175404d4e876bbaf37a4216261ef663709649",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/builtin/util.js": "0cfdec184d97732a21d30541ad67ac00e144a345",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/buffer-browserify/buffer_ieee754.js": "1095688e7974e5f3d1c2e9cf74d559aad6ed966d",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/buffer-browserify/index.js": "29552242a3f24b0ee7dda2052bd0786f128f5d2d",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/buffer-browserify/node_modules/base64-js/lib/b64.js": "00b190bb6fe286e603ba1d4febc765b86f17ee26",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/crypto-browserify/index.js": "47c24597beb750ccc7c9d324c5c8164d6c44da38",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/crypto-browserify/md5.js": "4eab613162a22bd9d3535cc3970473347f18c06d",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/crypto-browserify/rng.js": "c7b70b0ea20010a73cdf2c703eb8e16744b021ec",
+    "../../.nave/installed/0.8.16/lib/node_modules/module-deps/node_modules/browser-resolve/node_modules/crypto-browserify/sha.js": "da51761f4ffc8c2140c9ef56dd5332706724d20a",
+    "index.js": "e3ef174d948c12ac2604fec4b9cbcfdbd530baa9",
+    "node_modules/JSONStream/index.js": "169fa75e5c38448122d22aae5e7393e69a3451d7",
+    "node_modules/JSONStream/node_modules/jsonparse/jsonparse.js": "3075a442014733a8b9fe852eb601a6bc4f8e0724",
+    "node_modules/JSONStream/node_modules/through/index.js": "3df3c6523342536ce2aefdd6a2ce3f5844fa4ca2",
+    "node_modules/optimist/index.js": "5860784f0393b8c4712e5512fa7fbd78e17cac53",
+    "node_modules/optimist/node_modules/wordwrap/index.js": "756e8b536a238426b7eb92e4eb6d2e5ef938eccf",
+    "node_modules/sha1sum/index.js": "e24fd5584aac650d692d43d140e9e18285e2e229",
+    "node_modules/through/index.js": "29f8e5e48b22113bf669f38789d89a66b91ec753"
+  },
+  "date": "2013-04-25T11:07:22.779Z",
+  "ts": 1366888042779
+}
