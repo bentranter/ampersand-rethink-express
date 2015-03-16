@@ -20,50 +20,48 @@ People.ensureIndex('date');
 
 // API Endpoints
 exports.list = function (req, res) {
-
     People.orderBy({ index: r.desc('date') }).run().then(function(people) {
         res.json(people);
+    }).error(function(err) {
+        res.json({message: err});
     });
 };
 
 exports.add = function (req, res) {
-
     // Create new instance of 'People' model
-    var person = new People({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName, 
-        coolnessFactor: parseInt(req.body.coolnessFactor)
-    });
+    var person = new People(req.body);
 
     // Save the person and check for errors kind-of
-    person.save(function(err, doc) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.json(doc);
-        }
+    person.save().then(function(result) {
+        res.json(result);
+    }).error(function(err) {
+        res.json({message: err});
     });
 };
 
 exports.get = function (req, res) {
-
     People.get(req.params.id).run().then(function(person) {
         res.json(person);
+    }).error(function(err) {
+        res.json({message: err});
     });
 };
 
 exports.delete = function (req, res) {
-
-    People.get(req.params.id).delete().run().then(function(error, result) {
-        res.json({
-            error: error,
-            result: result
+    People.get(req.params.id).run().then(function(user) {
+        user.delete().then(function(result) {
+            res.json(result);
+        }).error(function(err) {
+            // Couldn't delete
+            res.json(err);
         });
+    }).error(function(err) {
+        // Couldn't find
+        res.json({message: err});
     });
 };
 
 exports.update = function (req, res) {
-
     People.get(req.params.id).run().then(function(person) {
 
         if (req.body.firstName) {
@@ -78,13 +76,10 @@ exports.update = function (req, res) {
         person.date = r.now();
 
         // Save the person and check for errors kind-of
-        person.save(function(err, doc) {
-            if (err) {
-                res.send(err); 
-            } else {
-                res.json(doc); 
-            }
+        person.save().then(function(result) {
+            res.json(result);
+        }).error(function(err) {
+            res.json({message: err});
         });
     });
 };
-
