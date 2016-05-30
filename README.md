@@ -17,6 +17,10 @@ See docs: http://ampersandjs.com/
 Curated modules: http://tools.ampersandjs.com/
 Write-up: [http://yearlonghackathon.com](http://yearlonghackathon.com)
 
+## Interested in Go?
+
+Check out [ampersand-rethink-go](https://github.com/bentranter/ampersand-rethink-go).
+
 ## Credits
 
 Built by folks at [&yet](http://andyet.com)
